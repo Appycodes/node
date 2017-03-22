@@ -3,21 +3,9 @@ var path = require('path');
 var app = express();
 
 
-app.use('/bij', express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
-
-
-
-
-
-
-
-
-
-
-
-
-app.listen(80, function(err){
+app.listen(3000, function(err){
 	if(!err){
 		console.log('Server connected');
 	}
